@@ -1,0 +1,94 @@
+body {
+    background-image: url(images/vending-machines.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: aquamarine;
+
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: -19px;
+
+    font-family: 'PixeloidMono';
+}
+
+.navbar ul {
+    background-color: black;
+    overflow: hidden;
+    list-style-type: none;
+    text-align: center;
+}
+
+.navbar li {
+    float: center;
+    display: inline-block;
+}
+
+.navbar a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 14px 20px;
+}
+
+.navbar a:hover {
+    color: #ff2185;
+}
+
+@font-face {
+    font-family: 'PixeloidMono';
+    src: url(fonts/PixeloidMono.ttf);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 300px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+    text-align: center;
+    margin-top: -15px;
+    color: #6ff77d;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+.pink-drink {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: -150px;
+    left: 200px;
+
+    animation: floatAnimation 2s infinite;
+    filter: drop-shadow(0 0 10px #4dff64);
+}
+
+@keyframes floatAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+.blue-drink {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 50px;
+    right: 200px;
+
+    animation: floatAnimation 2s infinite;
+    filter: drop-shadow(0 0 10px #4dff64);
+}
